@@ -35,6 +35,7 @@ export class HomeComponent implements OnInit {
     this.readResults();
   }
 
+  // initialize form
   mainForm() {
     this.isLoggedIn = !!this.tokenStorageService.getToken();
     if (this.isLoggedIn) {
