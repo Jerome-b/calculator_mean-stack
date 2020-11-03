@@ -57,6 +57,10 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/', express.static(path.join(__dirname, 'public')));
 app.use('/results', resultRoute)
 
+app.get('*', (req, res) => {
+  res.sendFile(path.join(__dirname, 'public/index.html'))
+})
+
 
 // routes
 require('../routes/auth.routes')(app);
