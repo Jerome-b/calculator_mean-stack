@@ -8,7 +8,7 @@ import { HttpClient, HttpHeaders, HttpErrorResponse } from '@angular/common/http
 })
 export class ResultService {
 
-  baseUri = 'http://localhost:8080/results';
+  baseUri = 'https://morning-atoll-99909.herokuapp.com/results';
   headers = new HttpHeaders().set('Content-Type', 'application/json');
 
   constructor(private http: HttpClient) { }
