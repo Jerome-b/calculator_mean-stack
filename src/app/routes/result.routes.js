@@ -16,7 +16,7 @@ resultRoute.route('/post').post((req, res, next) => {
 });
 
 // Get all results
-resultRoute.route('/').get((_req, res) => {
+resultRoute.route('/').get((_req, res, next) => {
   Result.find((error, data) => {
     if (error) {
       return next(error)
