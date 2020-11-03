@@ -1,3 +1,3 @@
 module.exports = {
-  db: 'mongodb+srv://userX:qwerty,,0@cluster-bdkmr6vm.qnh03.mongodb.net/calculator?retryWrites=true&w=majority'
+  db: 'mongodb://heroku_bdkmr6vm:eb5pjiurlfifh56lp84csbqidl@ds263138.mlab.com:63138/heroku_bdkmr6vm'
 };
