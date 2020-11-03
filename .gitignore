@@ -45,4 +45,6 @@ testem.log
 .DS_Store
 Thumbs.db
 
+#config folder
+/src/app/backend/config
 
