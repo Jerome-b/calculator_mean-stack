@@ -1,4 +1,3 @@
 module.exports = {
-  db: 'mongodb://userX:qwerty,,0@ds011943.mlab.com:11943/heroku_15f8r5nx'
+  db: 'mongodb://heroku_bdkmr6vm:eb5pjiurlfifh56lp84csbqidl@ds263138.mlab.com:63138/heroku_bdkmr6vm'
 };
-
