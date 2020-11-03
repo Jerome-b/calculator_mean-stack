@@ -53,12 +53,12 @@ app.use(bodyParser.json());
 // parse requests of content-type - application/x-www-form-urlencoded
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(cors(corsOptions));
-app.use(express.static(path.join(__dirname, 'public')));
-app.use('/', express.static(path.join(__dirname, 'public')));
+app.use(express.static(path.join(__dirname + '/dist')));
+app.use('/', express.static(path.join(__dirname + '/dist')));
 app.use('/results', resultRoute)
 
 app.get('*', (req, res) => {
-  res.sendFile(path.join(__dirname, 'public/index.html'))
+  res.sendFile(path.join(__dirname + '/dist/index.html'))
 })
 
 
