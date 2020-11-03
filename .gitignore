@@ -46,4 +46,4 @@ testem.log
 Thumbs.db
 
 #config db
-/src/app/backend/config
+

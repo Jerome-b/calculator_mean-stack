@@ -126,6 +126,7 @@ export class HomeComponent implements OnInit {
     }
 
     console.log('Formula ' + formula);
+    // tslint:disable-next-line: no-eval
     this.result = eval(formula);
   }
 
