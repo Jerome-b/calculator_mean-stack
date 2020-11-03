@@ -3,7 +3,7 @@ const path = require('path');
 const mongoose = require('mongoose');
 const cors = require('cors');
 const bodyParser = require('body-parser');
-const dbConfig = require('./src/app/backend/config/db.config');
+const dbConfig = require('./backend/config/db.config');
 
 var corsOptions = {
   origin: "http://localhost:8081"
@@ -24,7 +24,7 @@ error => {
 )
 
 // Setting up port with express js
-const resultRoute = require('./src/app/routes/result.routes');
+const resultRoute = require('./routes/result.routes');
 const app = express();
 
 // Add headers
@@ -63,7 +63,7 @@ app.get('*', (req, res) => {
 
 
 // routes
-require('./src/app/routes/auth.routes')(app);
+require('./routes/auth.routes')(app);
 
 // set port, listen for requests
 const PORT = process.env.PORT || 8080;
